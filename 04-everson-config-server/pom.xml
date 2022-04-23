@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>br.com.everson</groupId>
-    <artifactId>greeting-service</artifactId>
+    <artifactId>everson-config-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>greeting-service</name>
-    <description>greeting-service</description>
+    <name>04-everson-config-server</name>
+    <description>04-everson-config-server</description>
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>2021.0.1</spring-cloud.version>
@@ -23,18 +23,8 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-  <!--      <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>-->
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
+            <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
 
         <dependency>

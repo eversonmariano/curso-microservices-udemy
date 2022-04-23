@@ -1,13 +1,15 @@
-package br.com.everson.greetingservice;
+package br.com.everson;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.config.server.EnableConfigServer;
 
 @SpringBootApplication
-public class GreetingServiceApplication {
+@EnableConfigServer
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(GreetingServiceApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 }
