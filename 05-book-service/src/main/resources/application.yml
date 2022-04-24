@@ -3,6 +3,7 @@ server:
 spring:
   application:
     name: book-service
+<<<<<<< HEAD
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/book_service?userTimezone=true&serverTimezone=UTC
@@ -21,3 +22,5 @@ spring:
     user: root
     password: 1010
 
+=======
+>>>>>>> 7187068f8e5f1d0b3c9f751de4f645058c598c02
