@@ -3,13 +3,6 @@ server:
 spring:
   application:
     name: book-service
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 4415eeb428d807a00882ab7ca072cc58b36b5ba0
->>>>>>> 8356af45bd2ea793e8ebe13b6c0bec06ba6eb25d
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/book_service?userTimezone=true&serverTimezone=UTC
@@ -26,15 +19,8 @@ spring:
     url: jdbc:mysql://localhost:3306/
     schemas: book_service
     user: root
-<<<<<<< HEAD
     password: 1010
-=======
-<<<<<<< HEAD
-    password: 1010
-=======
-    password: 1010
-
-=======
->>>>>>> 7187068f8e5f1d0b3c9f751de4f645058c598c02
->>>>>>> 4415eeb428d807a00882ab7ca072cc58b36b5ba0
->>>>>>> 8356af45bd2ea793e8ebe13b6c0bec06ba6eb25d
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+    default-property-inclusion: non_null
