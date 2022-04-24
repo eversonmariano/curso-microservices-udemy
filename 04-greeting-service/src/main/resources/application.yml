@@ -7,7 +7,7 @@ spring:
     import: optional:configserver:http://localhost:8888/
   cloud:
     config:
-      profile: qa
+      profile: prod
 management:
   endpoints:
     web:
