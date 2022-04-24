@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>br.com.everson</groupId>
-    <artifactId>cambio-service</artifactId>
+    <artifactId>book-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>05-cambio-service</name>
-    <description>05-cambio-service</description>
+    <name>05-book-service</name>
+    <description>05-book-service</description>
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>2021.0.1</spring-cloud.version>
@@ -26,6 +26,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+<<<<<<< HEAD
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -46,6 +47,13 @@
             <artifactId>flyway-core</artifactId>
         </dependency>
 
+=======
+    <!--    <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+-->
+>>>>>>> 7187068f8e5f1d0b3c9f751de4f645058c598c02
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
