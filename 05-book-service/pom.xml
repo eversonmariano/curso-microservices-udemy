@@ -26,7 +26,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> 4415eeb428d807a00882ab7ca072cc58b36b5ba0
+>>>>>>> 8356af45bd2ea793e8ebe13b6c0bec06ba6eb25d
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -47,13 +55,29 @@
             <artifactId>flyway-core</artifactId>
         </dependency>
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+=======
+>>>>>>> 4415eeb428d807a00882ab7ca072cc58b36b5ba0
+>>>>>>> 8356af45bd2ea793e8ebe13b6c0bec06ba6eb25d
     <!--    <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
 -->
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 7187068f8e5f1d0b3c9f751de4f645058c598c02
+>>>>>>> 4415eeb428d807a00882ab7ca072cc58b36b5ba0
+>>>>>>> 8356af45bd2ea793e8ebe13b6c0bec06ba6eb25d
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
