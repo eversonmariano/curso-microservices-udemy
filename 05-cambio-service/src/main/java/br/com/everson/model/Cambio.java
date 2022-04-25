@@ -25,6 +25,7 @@ public class Cambio implements Serializable {
 
     @Transient
     private BigDecimal conversionValue;
+
     @Transient
     private String environment;
 
