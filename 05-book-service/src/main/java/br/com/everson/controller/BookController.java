@@ -1,6 +1,7 @@
 package br.com.everson.controller;
 
 import br.com.everson.model.Book;
+import br.com.everson.proxy.CambioProxy;
 import br.com.everson.repository.BookRepository;
 import br.com.everson.response.Cambio;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import java.lang.reflect.Proxy;
 import java.util.HashMap;
 
 
@@ -24,7 +26,28 @@ public class BookController {
     @Autowired
     private BookRepository repository;
 
+    @Autowired
+    private CambioProxy proxy;
+
     @GetMapping(value = "/{id}/{currency}", produces = { "application/json" })
+    public Book findById(@PathVariable("id") Long id,
+                         @PathVariable("currency") String currency) {
+
+
+        var book = repository.getById(id);
+        if (book == null) throw new RuntimeException("Book not found!");
+
+        var cambio = proxy.getCambio(book.getPrice(), "USD", currency);
+
+        var port = environment.getProperty("local.server.port");
+        book.setEnvironment(port + "FEIGN");
+        book.setPrice(cambio.getConvertedValue());
+        return book;
+    }
+
+    //Abaixo temos a função que faz com que uma API consuma outra API
+
+/*    @GetMapping(value = "/{id}/{currency}", produces = { "application/json" })
     public Book findById(@PathVariable("id") Long id,
                          @PathVariable("currency") String currency) {
 
@@ -48,7 +71,10 @@ public class BookController {
         book.setPrice(cambio.getConvertedValue());
         book.setCurrency(currency);
         return book;
-    }
+    }*/
+
+
+
 
 
 }
