@@ -54,9 +54,17 @@
             <artifactId>flyway-core</artifactId>
         </dependency>
 
+        <!--Documentação  -->
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-webmvc-core</artifactId>
+            <version>1.6.11</version>
+        </dependency>
+
+        <!--Parte gráfica da documentação  -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
             <version>1.6.11</version>
         </dependency>
 

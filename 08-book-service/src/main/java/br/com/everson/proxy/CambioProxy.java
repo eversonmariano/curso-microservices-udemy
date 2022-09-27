@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface CambioProxy {
 
     @GetMapping(value="/cambio-service/{amount}/{from}/{to}")
-    Cambio getCambio(
+    public Cambio getCambio(
             @PathVariable("amount") Double amount,
             @PathVariable("from") String from,
             @PathVariable("to") String to
