@@ -14,18 +14,18 @@ public class Cambio implements Serializable {
     private String from;
     private String to;
     private Double conversionFactor;
-    private Double convertedValue;
+    private Double conversionValue;
     private String environment;
 
     public Cambio() {
     }
 
-    public Cambio(Long id, String from, String to, Double conversionFactor, Double convertedValue, String environment) {
+    public Cambio(Long id, String from, String to, Double conversionFactor, Double conversionValue, String environment) {
         this.id = id;
         this.from = from;
         this.to = to;
         this.conversionFactor = conversionFactor;
-        this.convertedValue = convertedValue;
+        this.conversionValue = conversionValue;
         this.environment = environment;
     }
 
@@ -61,12 +61,12 @@ public class Cambio implements Serializable {
         this.conversionFactor = conversionFactor;
     }
 
-    public Double getConvertedValue() {
-        return convertedValue;
+    public Double getConversionValue() {
+        return conversionValue;
     }
 
-    public void setConvertedValue(Double convertedValue) {
-        this.convertedValue = convertedValue;
+    public void setConversionValue(Double conversionValue) {
+        this.conversionValue = conversionValue;
     }
 
     public String getEnvironment() {
@@ -82,11 +82,11 @@ public class Cambio implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Cambio cambio = (Cambio) o;
-        return Objects.equals(id, cambio.id) && Objects.equals(from, cambio.from) && Objects.equals(to, cambio.to) && Objects.equals(conversionFactor, cambio.conversionFactor) && Objects.equals(convertedValue, cambio.convertedValue) && Objects.equals(environment, cambio.environment);
+        return Objects.equals(id, cambio.id) && Objects.equals(from, cambio.from) && Objects.equals(to, cambio.to) && Objects.equals(conversionFactor, cambio.conversionFactor) && Objects.equals(conversionValue, cambio.conversionValue) && Objects.equals(environment, cambio.environment);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, from, to, conversionFactor, convertedValue, environment);
+        return Objects.hash(id, from, to, conversionFactor, conversionValue, environment);
     }
 }
